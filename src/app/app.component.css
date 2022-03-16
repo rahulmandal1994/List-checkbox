@@ -59,3 +59,27 @@ p {
   .mat-checkbox-background {
   background-color:  #dee3e6 !important;
 }
+.rectangle{
+  width:200px;
+  height:100px;
+  background:#0070a9;
+}
+
+::ng-deep.mat-form-field-infix {
+  /*change color of underline*/
+  background-color: white !important;
+}
+.notuse ::ng-deep .mat-focused .mat-form-field-label {
+  /*change color of label*/
+  color: green !important;
+ }
+
+ .notuse ::ng-deep.mat-form-field-underline {
+  /*change color of underline*/
+  background-color: green !important;
+} 
+
+.notuse ::ng-deep.mat-form-field-ripple {
+ /*change color of underline when focused*/
+ background-color: green !important;;
+}
