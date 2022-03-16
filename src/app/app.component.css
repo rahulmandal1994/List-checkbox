@@ -13,11 +13,11 @@ p {
   .mat-checkbox-background {
   background-color:  #0070A9 !important;
 }
-/*.bluecheckmark::ng-deep mat-checkbox.buyItNowLabel .mat-checkbox-checkmark-path {
-  stroke: #0070A9 !important;
-}*/
 .bluecheckmark ::ng-deep mat-checkbox .mat-checkbox-checkmark-path {
   stroke: #0070a9 !important;
+}
+.blackcheckmark ::ng-deep mat-checkbox .mat-checkbox-checkmark-path {
+  stroke: black !important;
 }
 .crosscheckmark ::ng-deep .mat-checkbox .mat-checkbox-background {
   background-image: url('../assets/cross.png');
@@ -41,9 +41,21 @@ p {
   .mat-checkbox-frame {
   background-color: #00bcd2 !important;
 }*/
+/*.graybackground
+  ::ng-deep
+  .mat-checkbox-indeterminate.mat-accent .mat-checkbox-background, .mat-checkbox-checked.mat-accent .mat-checkbox-background{
+    background-color: red !important;
+  }
+
+  ::ng-deep .mat-checkbox-checked.mat-accent .mat-checkbox-background {
+    background-color: #d6d3d5 !important;
+}*/
+.blueborder::ng-deep .mat-checkbox .mat-checkbox-frame {
+  border-color: #0070A9;
+}
 .graybackground
   ::ng-deep
   .mat-checkbox-checked.mat-accent
   .mat-checkbox-background {
-  background-color:  #c9d1d4 !important;
+  background-color:  #dee3e6 !important;
 }

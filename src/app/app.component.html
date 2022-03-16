@@ -28,8 +28,10 @@
 </mat-list>
 <section class="example-section">
   <h4>Select your toppings:</h4>
-  <p class="bluebackground"><mat-checkbox >blue selected</mat-checkbox></p>
-  <p class="bluecheckmark"><mat-checkbox  >yellow selected</mat-checkbox></p>
-  <p class="crosscheckmark" ><mat-checkbox [disabled]="true">Mushroom</mat-checkbox></p>
-  <p class="graybackground"><mat-checkbox  [checked]="true">Disabled Checked</mat-checkbox></p>
+  <p class="bluebackground"><mat-checkbox >Blue selected</mat-checkbox></p>
+  <p class="bluecheckmark"><mat-checkbox  >Yellow selected</mat-checkbox></p>
+  <p class="crosscheckmark blueborder" ><mat-checkbox>Excluded</mat-checkbox></p>
+  <p class="blackcheckmark graybackground "><mat-checkbox  [checked]="true"
+>Disabled Checked</mat-checkbox></p>
+  <p class="blueborder" ><mat-checkbox >Blue Not Selected</mat-checkbox></p>
 </section>
