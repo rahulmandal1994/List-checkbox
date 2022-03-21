@@ -2,11 +2,19 @@
 <p>
   Start editing to see some magic happen :)
 </p> -->
-<div class="rectangle">
-<mat-form-field class="example-full-width" appearance="fill">
-  <mat-label>First name</mat-label>
-  <input matInput>
-</mat-form-field>
+<div class="inputcontainer">
+  <span style="margin-left: 30px;color:white">Age</span>
+  <div style="margin-left: 30px;" class="leftborder inputValuecolor">
+    <mat-form-field>
+      <mat-label>Enter Age</mat-label>
+      <input matInput [disabled]="true"/>
+      <mat-error style="border:5px solid red;">sssss</mat-error>
+    </mat-form-field>
+    <!-- <mat-error style="border:0px solid red;vertical-align:middle;">
+    <i style="font-size:20px;border:0px solid red"class="material-icons">warning_amber</i> 
+      Please enter a valid email address
+    </mat-error> -->
+  </div>
 </div>
 <h3>Style 1</h3>
 <mat-list role="list">
@@ -34,10 +42,11 @@
 </mat-list>
 <section class="example-section">
   <h4>Select your toppings:</h4>
-  <p class="bluebackground"><mat-checkbox >Blue selected</mat-checkbox></p>
-  <p class="bluecheckmark"><mat-checkbox  >Yellow selected</mat-checkbox></p>
-  <p class="crosscheckmark blueborder" ><mat-checkbox>Excluded</mat-checkbox></p>
-  <p class="blackcheckmark graybackground "><mat-checkbox  [checked]="true"
->Disabled Checked</mat-checkbox></p>
-  <p class="blueborder" ><mat-checkbox >Blue Not Selected</mat-checkbox></p>
+  <p class="bluebackground"><mat-checkbox>Blue selected</mat-checkbox></p>
+  <p class="bluecheckmark"><mat-checkbox>Yellow selected</mat-checkbox></p>
+  <p class="crosscheckmark blueborder"><mat-checkbox>Excluded</mat-checkbox></p>
+  <p class="blackcheckmark graybackground">
+    <mat-checkbox [checked]="true">Disabled Checked</mat-checkbox>
+  </p>
+  <p class="blueborder"><mat-checkbox>Blue Not Selected</mat-checkbox></p>
 </section>
