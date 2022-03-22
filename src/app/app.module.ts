@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
@@ -11,8 +11,9 @@ import {MatInputModule} from '@angular/material/input';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule,MatListModule ,MatIconModule
-  ,MatCheckboxModule,MatInputModule],
+  ,MatCheckboxModule,MatInputModule,ReactiveFormsModule],
   declarations: [ AppComponent, HelloComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
+

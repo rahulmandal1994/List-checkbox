@@ -45,13 +45,18 @@
     </div>
 </div>
 <span>Disabled</span>
+<form >
 <div class="inputcontainer">
   <span style="margin-left: 30px;color:white">Age</span>
     <div style="margin-left: 30px;" class="leftborder inputValuecolor">
+      
       <mat-form-field>
         <mat-label>Enter Age</mat-label>
-        <input matInput [disabled]="true"/>
-        <mat-error style="border:5px solid red;">sssss</mat-error>
+        <input matInput [formControl]="emailFormControl"/>
+         <mat-error style="color:white;display:flex;align-item:center">
+      <i style="font-size:20px;border:0px solid red"class="material-icons">warning_amber</i> 
+        Please enter a valid email address
+      </mat-error>
       </mat-form-field>
       <!-- <mat-error style="border:0px solid red;vertical-align:middle;">
       <i style="font-size:20px;border:0px solid red"class="material-icons">warning_amber</i> 
@@ -59,6 +64,7 @@
       </mat-error> -->
     </div>
 </div>
+</form>
 <h3>Style 1</h3>
 <mat-list role="list">
   <mat-list-item role="listitem">
