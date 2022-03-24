@@ -2,7 +2,8 @@
 <p>
   Start editing to see some magic happen :)
 </p> -->
-<div class="inputcontainer">
+<h1>Text Input on Blue Background</h1>
+<div class="inputcontainer hideunderline">
   <span style="margin-left: 30px;color:white">Age</span>
   <div style="margin-left: 30px;">
     <mat-form-field  floatLabel="never">
@@ -11,8 +12,8 @@
     </mat-form-field>
   </div>
 </div>
-<span>Default</span>
-<div class="inputcontainer">
+<h4>Default</h4>
+<div class="inputcontainer hideunderline">
   <span style="margin-left: 30px;color:white">Age</span>
   <div style="margin-left: 30px;" class="inputValuecolor">
     <mat-form-field floatLabel="never">
@@ -21,8 +22,8 @@
     </mat-form-field>
   </div>
 </div>
-<span>Enter</span>
-<div class="inputcontainer">
+<h4>Enter</h4>
+<div class="inputcontainer hideunderline">
   <span style="margin-left: 30px;color:white">Age</span>
   <div style="margin-left: 30px;" class="disabledmatlabelcolor">
     <mat-form-field floatLabel="never">
@@ -31,26 +32,37 @@
     </mat-form-field>
   </div>
 </div>
-<span>Disabled</span>
-<form>
-  <div class="inputcontainer">
-    <span style="margin-left: 30px;color:white">Age</span>
-    <div style="margin-left: 30px;" class="leftborder inputValuecolor">
-      <mat-form-field floatLabel="never">
-        <mat-label>Enter Age</mat-label>
-        <input matInput [formControl]="emailFormControl" />
-        <mat-error style="color:white;display:flex;align-item:center">
-          <i style="font-size:20px;border:0px solid red" class="material-icons"
-            >warning_amber</i
-          >
-          Please enter a valid email address
-        </mat-error>
-      </mat-form-field>
+<h4>Disabled</h4>
+  <form>
+    <div class="inputcontainer hideunderline">
+      <span style="margin-left: 30px;color:white">Age</span>
+      <div style="margin-left: 30px;" class="leftborder inputValuecolor">
+        <mat-form-field floatLabel="never">
+          <mat-label>Enter Age</mat-label>
+          <input matInput [formControl]="FormControl1" />
+          <mat-error style="color:white;display:flex;align-item:center">
+            <i style="font-size:20px;" class="material-icons"
+              >warning_amber</i
+            >
+            Please use numeric charecter only 
+          </mat-error>
+        </mat-form-field>
+      </div>
     </div>
-  </div>
+  </form>
+<h4>Error message</h4>
+<h1>Text Input on white Background</h1>
+<form>
+  <mat-form-field >
+    <mat-label>First Name</mat-label>
+    <input matInput [formControl]="FormControl2" />
+    <mat-error style="display:flex;align-item:center">
+      <i style="font-size:20px;" class="material-icons">warning_amber</i>
+      Please enter a valid email address
+    </mat-error>
+  </mat-form-field>
 </form>
-<span>Error message</span>
-
+<h4>Default</h4>
 <h3>Style 1</h3>
 <mat-list role="list">
   <mat-list-item role="listitem">

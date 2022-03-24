@@ -7,5 +7,7 @@ import { FormControl, Validators } from '@angular/forms';
   styleUrls: [ './app.component.css' ]
 })
 export class AppComponent  {
-  emailFormControl = new FormControl('', [Validators.required]); 
+  FormControl1 = new FormControl('', [Validators.required]); 
+  FormControl2 = new FormControl('', [Validators.required]); 
+
 }
