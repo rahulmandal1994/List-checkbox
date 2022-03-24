@@ -5,7 +5,7 @@
 <div class="inputcontainer">
   <span style="margin-left: 30px;color:white">Age</span>
   <div style="margin-left: 30px;">
-    <mat-form-field>
+    <mat-form-field  floatLabel="never">
       <mat-label>Enter Age</mat-label>
       <input matInput />
     </mat-form-field>
@@ -15,7 +15,7 @@
 <div class="inputcontainer">
   <span style="margin-left: 30px;color:white">Age</span>
   <div style="margin-left: 30px;" class="inputValuecolor">
-    <mat-form-field>
+    <mat-form-field floatLabel="never">
       <mat-label>Enter Age</mat-label>
       <input matInput />
     </mat-form-field>
@@ -25,10 +25,9 @@
 <div class="inputcontainer">
   <span style="margin-left: 30px;color:white">Age</span>
   <div style="margin-left: 30px;" class="disabledmatlabelcolor">
-    <mat-form-field>
+    <mat-form-field floatLabel="never">
       <mat-label>Enter Age</mat-label>
       <input matInput [disabled]="true" />
-      <mat-error style="border:5px solid red;">sssss</mat-error>
     </mat-form-field>
   </div>
 </div>
@@ -37,7 +36,7 @@
   <div class="inputcontainer">
     <span style="margin-left: 30px;color:white">Age</span>
     <div style="margin-left: 30px;" class="leftborder inputValuecolor">
-      <mat-form-field>
+      <mat-form-field floatLabel="never">
         <mat-label>Enter Age</mat-label>
         <input matInput [formControl]="emailFormControl" />
         <mat-error style="color:white;display:flex;align-item:center">

@@ -8,10 +8,11 @@ import { MatListModule } from '@angular/material/list';
 import { MatIconModule } from '@angular/material/icon';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import {MatInputModule} from '@angular/material/input';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule,MatListModule ,MatIconModule
-  ,MatCheckboxModule,MatInputModule,ReactiveFormsModule],
+  ,MatCheckboxModule,MatInputModule,ReactiveFormsModule,BrowserAnimationsModule],
   declarations: [ AppComponent, HelloComponent ],
   bootstrap:    [ AppComponent ]
 })

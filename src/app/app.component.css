@@ -24,32 +24,6 @@ p {
   background-position: center;
   background-size: contain;
 }
-/*.graybackground ::ng-deep .mat-checkbox-checked.mat-accent .mat-checkbox-background {
-  background-color:  #d9d9d9 !important;
-}*/
-/*.graybackground ::ng-deep.mat-checkbox-checked.mat-accent.mat-checkbox-disabled .mat-checkbox-background, .mat-checkbox-indeterminate.mat-accent .mat-checkbox-background {
-  background-color: rgb(199, 187, 187) !important;
-}*/
-/*.checkmark ::ng-deep .mat-checkbox .mat-checkbox-inner-container {
-  background-color: #0070a9;
-}
-::ng-deep
-  .mat-checkbox-checked
-  .mat-checkbox-layout
-  .mat-checkbox-inner-container
-  .mat-checkbox-background
-  .mat-checkbox-frame {
-  background-color: #00bcd2 !important;
-}*/
-/*.graybackground
-  ::ng-deep
-  .mat-checkbox-indeterminate.mat-accent .mat-checkbox-background, .mat-checkbox-checked.mat-accent .mat-checkbox-background{
-    background-color: red !important;
-  }
-
-  ::ng-deep .mat-checkbox-checked.mat-accent .mat-checkbox-background {
-    background-color: #d6d3d5 !important;
-}*/
 .blueborder::ng-deep .mat-checkbox .mat-checkbox-frame {
   border-color: #0070a9;
 }
