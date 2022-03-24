@@ -79,6 +79,10 @@
 </mat-form-field>
 </form>
 <h4>Error</h4>
+<ngx-otp-input class="pintext"  [config]="otpInputConfig" (otpChange)="handeOtpChange($event)" (fill)="handleFillEvent($event)">
+</ngx-otp-input>
+<h3>Pin Text Input</h3>
+
 <h3>Style 1</h3>
 <mat-list role="list">
   <mat-list-item role="listitem">

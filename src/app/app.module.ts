@@ -9,10 +9,11 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import {MatInputModule} from '@angular/material/input';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NgxOtpInputModule } from "ngx-otp-input";
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule,MatListModule ,MatIconModule
-  ,MatCheckboxModule,MatInputModule,ReactiveFormsModule,BrowserAnimationsModule],
+  ,MatCheckboxModule,MatInputModule,ReactiveFormsModule,BrowserAnimationsModule,NgxOtpInputModule],
   declarations: [ AppComponent, HelloComponent ],
   bootstrap:    [ AppComponent ]
 })
