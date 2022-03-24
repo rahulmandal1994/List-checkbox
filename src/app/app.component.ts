@@ -8,6 +8,6 @@ import { FormControl, Validators } from '@angular/forms';
 })
 export class AppComponent  {
   FormControl1 = new FormControl('', [Validators.required]); 
-  FormControl2 = new FormControl('', [Validators.required]); 
+  FormControl2 = new FormControl('', [Validators.pattern(/^-?(0|[1-9]\d*)?$/)]); 
 
 }

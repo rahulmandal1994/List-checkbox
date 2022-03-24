@@ -70,6 +70,31 @@ input.ng-valid + span.mat-form-field-label-wrapper .mat-form-field-label {
   /*change color of label*/
   color: #666666 !important;
 }
-/*::ng-deep .mat-form-field-appearance-outline.mat-form-field-disabled.mat-form-field-label {
-  color: rgba(175, 9, 9, 0.6)!important;
-}*/
+ /*change color of label*/
+/*::ng-deep .mat-focused .mat-form-field-label {
+  color: green !important;
+ }
+/*change color of underline*/
+/*
+ ::ng-deep.mat-form-field-underline {
+  background-color: green !important;
+} 
+*/
+.stoprippleffect::ng-deep.mat-form-field-ripple {
+ /*change color of underline when focused*/
+ /*background-color: green !important;*/
+ display: none;
+}
+.startrippleffect::ng-deep.mat-form-field-ripple {
+  /*change color of underline when focused*/
+  /*background-color: green !important;*/
+  display: block;
+ }
+ .inputValuecolorforerror {
+  color: red !important;
+}
+.errormatlable::ng-deep .mat-form-field-label {
+  /*change color of label*/
+  color: red !important;
+}
+
