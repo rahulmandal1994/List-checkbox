@@ -82,10 +82,7 @@
 <ngx-otp-input class="pintext"  [config]="otpInputConfig" (otpChange)="handeOtpChange($event)" (fill)="handleFillEvent($event)">
 </ngx-otp-input>
 <h4>Pin Text Input</h4>
-<div *ngFor="let gender of arrGender;let indexOfelement=index;" class="genderbox">{{gender.text}}</div>
-<!-- <div class="genderbox">F</div>
-<div class="genderbox">F</div>
-<div class="genderbox">F</div> -->
+<div *ngFor="let gender of arrGender;let indexOfelement=index;" class="genderbox" [ngClass]="gender.selected  ? 'selectedgenderbox' : 'unselectedgenderbox'" (click)="changeclass(indexOfelement)">{{gender.text}}</div>
 <h4>Pin Text Input</h4>
 
 <h3>Style 1</h3>

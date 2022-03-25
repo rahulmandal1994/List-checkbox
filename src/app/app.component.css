@@ -115,3 +115,11 @@ input.ng-valid + span.mat-form-field-label-wrapper .mat-form-field-label {
   justify-content: center;
   align-items: center;
   }
+  .selectedgenderbox{
+    background-color: rgb(143, 143, 143);
+    color: white;
+  }
+  .unselectedgenderbox{
+    background-color: white;
+    color: black;
+  }

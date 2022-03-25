@@ -10,13 +10,16 @@ import { NgxOtpInputConfig } from 'ngx-otp-input';
 export class AppComponent  {
   arrGender:any=[
     {
-      text:'M'
+      text:'M',
+      selected:false
     },
     {
-      text:'F'
+      text:'F',
+      selected:false
     },
     {
-      text:'X'
+      text:'X',
+      selected:false
     }
   ];
   FormControl1 = new FormControl('', [Validators.required]); 
@@ -40,5 +43,13 @@ export class AppComponent  {
 
   handleFillEvent(value: string): void {
     console.log(value);
+  }
+  changeclass(indexOfelement:number){
+   this.arrGender[indexOfelement].selected=true;
+   this.arrGender.forEach((element, index) => {
+     if(indexOfelement!=index){
+      element.selected=false;
+     }
+   });
   }
 }
