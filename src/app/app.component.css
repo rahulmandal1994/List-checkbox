@@ -1,6 +1,10 @@
 p {
   font-family: Lato;
 }
+input::-ms-reveal,
+      input::-ms-clear {
+        display: none;
+      }
 .custom-icon-color {
   color: #ff8080;
 }
