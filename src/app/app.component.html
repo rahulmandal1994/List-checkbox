@@ -83,8 +83,17 @@
 </ngx-otp-input>
 <h4>Pin Text Input</h4>
 <div *ngFor="let gender of arrGender;let indexOfelement=index;" class="genderbox" [ngClass]="gender.selected  ? 'selectedgenderbox' : 'unselectedgenderbox'" (click)="changeclass(indexOfelement)">{{gender.text}}</div>
-<h4>Pin Text Input</h4>
+<h4>Gender</h4>
+<mat-form-field class="stoprippleffect">
+  <mat-label>SSN</mat-label>
+  <input matInput [type]="showPassword ? 'text' : 'password'" />
+  <mat-icon matSuffix (click)="togglePasswordVisibility()">
+   {{showPassword?'visibility_off':'visibility'}}
+  </mat-icon>  
+</mat-form-field>
+<h4>Default</h4>
 
+<h4>Enter </h4>
 <h3>Style 1</h3>
 <mat-list role="list">
   <mat-list-item role="listitem">

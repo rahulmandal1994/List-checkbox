@@ -8,6 +8,7 @@ import { NgxOtpInputConfig } from 'ngx-otp-input';
   styleUrls: [ './app.component.css' ]
 })
 export class AppComponent  {
+  showPassword: boolean = false;
   arrGender:any=[
     {
       text:'M',
@@ -51,5 +52,8 @@ export class AppComponent  {
       element.selected=false;
      }
    });
+  }
+ togglePasswordVisibility(): void {
+    this.showPassword = !this.showPassword;
   }
 }
