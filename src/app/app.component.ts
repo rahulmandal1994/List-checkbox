@@ -8,6 +8,17 @@ import { NgxOtpInputConfig } from 'ngx-otp-input';
   styleUrls: [ './app.component.css' ]
 })
 export class AppComponent  {
+  arrGender:any=[
+    {
+      text:'M'
+    },
+    {
+      text:'F'
+    },
+    {
+      text:'X'
+    }
+  ];
   FormControl1 = new FormControl('', [Validators.required]); 
   FormControl2 = new FormControl('', [Validators.pattern(/^-?(0|[1-9]\d*)?$/)]); 
   otpInputConfig: NgxOtpInputConfig = {

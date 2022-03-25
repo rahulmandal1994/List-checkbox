@@ -105,3 +105,13 @@ input.ng-valid + span.mat-form-field-label-wrapper .mat-form-field-label {
   height: 15px !important;
   width: 15px !important;
 }
+.genderbox {
+  display:inline-grid;
+  position: static;
+  width:40px;
+  height:40px;
+  background-color: white;
+  border:1px solid #979797;
+  justify-content: center;
+  align-items: center;
+  }

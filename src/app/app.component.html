@@ -81,7 +81,12 @@
 <h4>Error</h4>
 <ngx-otp-input class="pintext"  [config]="otpInputConfig" (otpChange)="handeOtpChange($event)" (fill)="handleFillEvent($event)">
 </ngx-otp-input>
-<h3>Pin Text Input</h3>
+<h4>Pin Text Input</h4>
+<div *ngFor="let gender of arrGender;let indexOfelement=index;" class="genderbox">{{gender.text}}</div>
+<!-- <div class="genderbox">F</div>
+<div class="genderbox">F</div>
+<div class="genderbox">F</div> -->
+<h4>Pin Text Input</h4>
 
 <h3>Style 1</h3>
 <mat-list role="list">
