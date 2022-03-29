@@ -74,6 +74,14 @@ input.ng-valid + span.mat-form-field-label-wrapper .mat-form-field-label {
   /*change color of label*/
   color: #666666 !important;
 }
+.lbladjust::ng-deep.mat-form-field-appearance-legacy .mat-form-field-label {
+  top:20px;
+  left:4px;
+}
+.formfeildadjust::ng-deep.mat-form-field-appearance-legacy .mat-form-field-infix {
+  left: 10px;
+  top: -7px;
+}
  /*change color of label*/
 /*::ng-deep .mat-focused .mat-form-field-label {
   color: green !important;
@@ -96,6 +104,10 @@ input.ng-valid + span.mat-form-field-label-wrapper .mat-form-field-label {
  }
  .inputValuecolorforerror {
   color: red !important;
+}
+.inputValuepositionchange {
+  color: green !important;
+  margin-left: 10px;
 }
 .errormatlable::ng-deep .mat-form-field-label {
   /*change color of label*/
